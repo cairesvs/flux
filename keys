@@ -8,27 +8,28 @@ Mod4 Escape :RootMenu
 #shortcuts
 Mod4 t :ExecCommand xterm -ls
 Mod1 Control r :Reconfigure
-Mod4 e :ExecCommand emacs
 Mod4 g :ExecCommand gnome-do
-Mod4 z :ExecCommand nautilus .
+Mod4 n :ExecCommand tomboy --new-note
 Mod4 l :ExecCommand slock
-Mod4 n :ExecCommand nuvolaplayer
 Mod4 f :ExecCommand firefox
 Mod4 c :ExecCommand chromium-browser
-Mod4 Mod1 c :ExecCommand xterm -e cal
 Mod4 a :ExecCommand xterm -e alsamixer
-Control Shift a :ExecCommand nuvolaplayer-client toggle
-Mod4 Shift Right :ExecCommand nuvolaplayer-client next
-Mod4 Shift Left :ExecCommand nuvolaplayer-client prev
-MaximizeHorizontal
-Control Mod1 Left :ResizeHorizontal -10
-Control Mod1 Right :ResizeHorizontal 10
-Control Mod1 Up :ResizeVertical -10
-Control Mod1 Down :ResizeVertical 10
+Mod4 Shift Left :MoveTo 0 0 TopLeft
+Mod4 Shift Right :MoveTo 0 0 TopRight
+Mod4 Shift Up :MaximizeVertical
+Mod4 Shift Down :MaximizeHorizontal
+Control Mod4 a :ArrangeWindows
+Control Mod1 Left :ResizeHorizontal -15
+Control Mod1 Right :ResizeHorizontal 15
+Control Mod1 Up :ResizeVertical -15
+Control Mod1 Down :ResizeVertical 15
 
 # scroll on the desktop to change workspaces
 OnDesktop Mouse4 :PrevWorkspace
 OnDesktop Mouse5 :NextWorkspace
+
+Mod4 Tab :NextWorkspace
+Mod4 Shift Tab :PrevWorkspace
 
 # scroll on the toolbar to change current window
 OnToolbar Mouse4 :PrevWindow {static groups} (iconhidden=no)
