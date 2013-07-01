@@ -9,7 +9,8 @@ Mod4 Escape :RootMenu
 Mod4 t :ExecCommand xterm -ls
 Mod1 Control r :Reconfigure
 Mod4 g :ExecCommand gnome-do
-Mod4 n :ExecCommand tomboy --new-note
+Mod4 n :ExecCommand setxkbmap us
+Mod4 p :ExecCommand setxkbmap br
 Mod4 l :ExecCommand slock
 Mod4 f :ExecCommand firefox
 Mod4 c :ExecCommand chromium-browser
