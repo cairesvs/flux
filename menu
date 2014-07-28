@@ -1,4 +1,5 @@
 [begin] (fluxbox)
   [exec] (Firefox) {/usr/bin/firefox}
+  [exec] (Chrome) {/usr/bin/google-chrome}
   [include] (/etc/X11/fluxbox/fluxbox-menu)
 [end]

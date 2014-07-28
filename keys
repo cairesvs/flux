@@ -13,13 +13,16 @@ Mod4 n :ExecCommand setxkbmap us
 Mod4 p :ExecCommand setxkbmap br
 Mod4 l :ExecCommand slock
 Mod4 f :ExecCommand firefox
-Mod4 c :ExecCommand chromium-browser
+Mod4 c :ExecCommand google-chrome
 Mod4 a :ExecCommand xterm -e alsamixer
+Mod4 z :If {Some Matches (xterm)} {NextWindow (xterm)} {Exec xterm -u8 -reverse}
 Mod4 Shift Left :MoveTo 0 0 TopLeft
 Mod4 Shift Right :MoveTo 0 0 TopRight
 Mod4 Shift Up :MaximizeVertical
 Mod4 Shift Down :MaximizeHorizontal
 Control Mod4 a :ArrangeWindows
+Control Mod4 b :ArrangeWindowsVertical
+Control Mod4 c :ArrangeWindowsHorizontal
 Control Mod1 Left :ResizeHorizontal -15
 Control Mod1 Right :ResizeHorizontal 15
 Control Mod1 Up :ResizeVertical -15
